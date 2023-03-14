@@ -27,10 +27,14 @@ class MainActivity : AppCompatActivity() {
         // Create new Dice object with 6 sides and roll it
         val dice = Dice(6)
         val diceRoll = dice.roll()
+        val diceRoll2 = dice.roll()
 
         // Update the screen with the dice roll
         val resultTextView: TextView = findViewById(R.id.textView)
         resultTextView.text = diceRoll.toString()
+
+        val resultTextView2: TextView = findViewById(R.id.textView2)
+        resultTextView2.text = diceRoll2.toString()
     }
 }
 
