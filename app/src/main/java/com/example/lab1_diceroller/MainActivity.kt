@@ -24,12 +24,12 @@ class MainActivity : AppCompatActivity() {
      * Roll the dice and update the screen with the result.
      */
     private fun rollDice() {
-        // Create new Dice object with 6 sides and roll it
+        // Create two Dice objects with 6 sides and roll them
         val dice = Dice(6)
         val diceRoll = dice.roll()
         val diceRoll2 = dice.roll()
 
-        // Update the screen with the dice roll
+        // Update the screen with the two dice rolls
         val resultTextView: TextView = findViewById(R.id.textView)
         resultTextView.text = diceRoll.toString()
 
@@ -38,6 +38,9 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+/**
+ * Generate a random number for the dice
+ */
 class Dice(private val numSides: Int) {
 
     fun roll(): Int {
