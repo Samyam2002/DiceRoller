@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
+/**
+ * Generate a random number for the dice
+ */
 class Dice(private val numSides: Int) {
 
     fun roll(): Int {
